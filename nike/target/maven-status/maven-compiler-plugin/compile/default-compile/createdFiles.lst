@@ -1,0 +1,4 @@
+com\nike\pages\JoinPage.class
+com\nike\pages\LoginPage.class
+com\nike\data\DataProviders.class
+com\nike\pages\HomePage.class
