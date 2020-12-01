@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 public class JoinPageValidations extends TestBase {
-    @Test
+    @Test(groups = "smoke")
     public void validateUserBeingAleToClickOnSearchBtn() {
         JoinPage joinPage = PageFactory.initElements(driver, JoinPage.class);
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
@@ -18,7 +18,7 @@ public class JoinPageValidations extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = "regression")
     public void validateUserBeingAleToClickOnJoinUsBtn() {
         JoinPage joinPage = PageFactory.initElements(driver, JoinPage.class);
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
@@ -27,7 +27,7 @@ public class JoinPageValidations extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void fieldValidationOnJoinUsPage() {
         JoinPage joinPage = PageFactory.initElements(driver, JoinPage.class);
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
@@ -48,7 +48,7 @@ public class JoinPageValidations extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = "regression")
     public void sendDatafieldJoinUsPage() {
         JoinPage joinPage = PageFactory.initElements(driver, JoinPage.class);
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);

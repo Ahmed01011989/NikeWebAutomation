@@ -15,26 +15,26 @@ public class HomePageValidations extends TestBase {
 
     }
 
-    @Test(enabled = false)
+    @Test(groups = "regression")
     public void validateUserBeingAleToClickOnSearchBtn() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.clickOnSearchButton();
     }
 
 
-    @Test(enabled = false)
+    @Test(groups = "smoke")
     public void validateUserCanClickOnRealeaseButton() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.clickOnRealeasButton();
     }
 
-    @Test(enabled = false)
+    @Test(groups = "regression")
     public void validateUserBeingAleToClickOnJoinUsBtn() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.validateJoinUsBtn();
     }
 
-    @Test(enabled = false)
+    @Test(groups = "smoke")
     public void validateUserBeingAleToToSeeForYouandYourCrew() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.validateURL();

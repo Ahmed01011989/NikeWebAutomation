@@ -93,36 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Selenium_Test_Suite" class="hide-methods passed suite-Selenium_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Selenium_Test_Suite -->
-                      <a href="#" panel-name="suite-Selenium_Test_Suite" class="show-methods passed suite-Selenium_Test_Suite"> (show)</a> <!-- show-methods passed suite-Selenium_Test_Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Selenium_Test_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Selenium_Test_Suite" title="com.niketest.JoinPageValidations" class="method navigator-link" hash-for-method="fieldValidationOnJoinUsPage">fieldValidationOnJoinUsPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Selenium_Test_Suite" title="com.niketest.LoginPageValidations" class="method navigator-link" hash-for-method="validateUserBeingAbleToLogin(testuser002, testpass002)">validateUserBeingAbleToLogin(testuser002, testpass002)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Selenium_Test_Suite" title="com.niketest.LoginPageValidations" class="method navigator-link" hash-for-method="validateUserBeingAbleToLogin(testuser003, testpass003)">validateUserBeingAbleToLogin(testuser003, testpass003)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Selenium_Test_Suite" title="com.niketest.LoginPageValidations" class="method navigator-link" hash-for-method="validateUserBeingAbleToLogin(alnassiryahmed5@gmail.com, Test1234)">validateUserBeingAbleToLogin(alnassiryahmed5@gmail.com, Test1234)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Selenium_Test_Suite -->
+                    <span class="method-stats">0 methods,   </span>
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -134,53 +105,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Selenium_Test_Suite" class="panel Selenium_Test_Suite">
-          <div class="suite-Selenium_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.niketest.JoinPageValidations</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="fieldValidationOnJoinUsPage">
-                  </a> <!-- fieldValidationOnJoinUsPage -->
-                  <span class="method-name">fieldValidationOnJoinUsPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Selenium_Test_Suite-class-passed -->
-          <div class="suite-Selenium_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.niketest.LoginPageValidations</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateUserBeingAbleToLogin(testuser002, testpass002)">
-                  </a> <!-- validateUserBeingAbleToLogin(testuser002, testpass002) -->
-                  <span class="method-name">validateUserBeingAbleToLogin</span>
-                  <span class="parameters">(testuser002, testpass002)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateUserBeingAbleToLogin(testuser003, testpass003)">
-                  </a> <!-- validateUserBeingAbleToLogin(testuser003, testpass003) -->
-                  <span class="method-name">validateUserBeingAbleToLogin</span>
-                  <span class="parameters">(testuser003, testpass003)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateUserBeingAbleToLogin(alnassiryahmed5@gmail.com, Test1234)">
-                  </a> <!-- validateUserBeingAbleToLogin(alnassiryahmed5@gmail.com, Test1234) -->
-                  <span class="method-name">validateUserBeingAbleToLogin</span>
-                  <span class="parameters">(alnassiryahmed5@gmail.com, Test1234)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Selenium_Test_Suite-class-passed -->
         </div> <!-- panel Selenium_Test_Suite -->
         <div panel-name="test-xml-Selenium_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -198,10 +122,13 @@
   &lt;parameter name=&quot;url&quot; value=&quot;https://www.nike.com/&quot;/&gt;
   &lt;parameter name=&quot;platform&quot; value=&quot;windows&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Automation tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.niketest.HomePageValidations&quot;/&gt;
       &lt;class name=&quot;com.niketest.LoginPageValidations&quot;/&gt;
-      &lt;class name=&quot;com.niketest.JoinPageValidations&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Automation tests --&gt;
 &lt;/suite&gt; &lt;!-- Selenium Test Suite --&gt;
@@ -215,7 +142,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Automation tests (3 classes)</span>
+                <span class="test-name">Automation tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,28 +168,12 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
-data.setCell(0, 0, 0)
-data.setCell(0, 1, 'fieldValidationOnJoinUsPage')
-data.setCell(0, 2, 'com.niketest.JoinPageValidations')
-data.setCell(0, 3, 3569);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateUserBeingAbleToLogin')
-data.setCell(1, 2, 'com.niketest.LoginPageValidations')
-data.setCell(1, 3, 1544);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateUserBeingAbleToLogin')
-data.setCell(2, 2, 'com.niketest.LoginPageValidations')
-data.setCell(2, 3, 1288);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateUserBeingAbleToLogin')
-data.setCell(3, 2, 'com.niketest.LoginPageValidations')
-data.setCell(3, 3, 1245);
+data.addRows(0);
 window.suiteTableData['Selenium_Test_Suite']= { tableData: data, tableDiv: 'times-div-Selenium_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Selenium_Test_Suite">
               </div> <!-- times-div-Selenium_Test_Suite -->
             </div> <!-- times-div -->
@@ -273,94 +184,21 @@ return data;
             <span class="header-content">Reporter output for Selenium Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">validateUserBeingAbleToLogin(testuser002, testpass002)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on Sign In Button<br></span>
-                <span class="reporter-method-output">Type On Email Field<br></span>
-                <span class="reporter-method-output">Type On Password Field <br></span>
-                <span class="reporter-method-output">Clicked on Sign In Button<br></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">fieldValidationOnJoinUsPage</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on Join Us Button<br></span>
-                <span class="reporter-method-output">Clicked on Join Us Button<br></span>
-                <span class="reporter-method-output">email is displayed<br></span>
-                <span class="reporter-method-output">Password is displayed<br></span>
-                <span class="reporter-method-output">first name is displayed<br></span>
-                <span class="reporter-method-output">last name is displayed<br></span>
-                <span class="reporter-method-output">Data Of Birth is displayed<br></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">validateUserBeingAbleToLogin(testuser003, testpass003)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on Sign In Button<br></span>
-                <span class="reporter-method-output">Type On Email Field<br></span>
-                <span class="reporter-method-output">Type On Password Field <br></span>
-                <span class="reporter-method-output">Clicked on Sign In Button<br></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">validateUserBeingAbleToLogin(alnassiryahmed5@gmail.com, Test1234)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on Sign In Button<br></span>
-                <span class="reporter-method-output">Type On Email Field<br></span>
-                <span class="reporter-method-output">Type On Password Field <br></span>
-                <span class="reporter-method-output">Clicked on Sign In Button<br></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Selenium_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">15 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.niketest.HomePageValidations</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateUserBeingAbleToSearchForAnItem</span>
-                <br/>
-                <span class="ignored-method-name">validateUserCanClickOnRealeaseButton</span>
-                <br/>
-                <span class="ignored-method-name">validateUserBeingAleToClickOnJoinUsBtn</span>
-                <br/>
-                <span class="ignored-method-name">validateUserBeingAleToClickOnSearchBtn</span>
-                <br/>
-                <span class="ignored-method-name">validateUserBeingAleToToSeeForYouandYourCrew</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.niketest.JoinPageValidations</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">sendDatafieldJoinUsPage</span>
-                <br/>
-                <span class="ignored-method-name">validateUserBeingAleToClickOnJoinUsBtn</span>
-                <br/>
-                <span class="ignored-method-name">extentSetup</span>
-                <br/>
-                <span class="ignored-method-name">fieldValidationOnJoinUsPageSofAss</span>
-                <br/>
-                <span class="ignored-method-name">validateUserBeingAleToClickOnSearchBtn</span>
-                <br/>
-                <span class="ignored-method-name">generateReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.niketest.LoginPageValidations</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">validateUserBeingAleToClickOnJoinUsBtn</span>
                 <br/>
-                <span class="ignored-method-name">extentSetup</span>
+                <span class="ignored-method-name">validateUserBeingAbleToLogin</span>
                 <br/>
                 <span class="ignored-method-name">fieldValidationOnLogInPageSofAss</span>
-                <br/>
-                <span class="ignored-method-name">generateReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -371,105 +209,6 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.niketest.HomePageValidations</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">extentSetup(org.testng.TestRunner@37e0292a)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.niketest.LoginPageValidations</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setupDriver(windows, https://www.nike.com/, chrome, false, 85.0, browserstack)</span>
-                <span class="method-start">90 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">startExtent(public void com.niketest.LoginPageValidations.validateUserBeingAbleToLogin(java.lang.String,java.lan...)</span>
-                <span class="method-start">7573 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateUserBeingAbleToLogin(alnassiryahmed5@gmail.com, Test1234)</span>
-                <span class="method-start">7577 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=validateUserBeingAbleToLogin status=SUCCESS method=LoginPageValidations.validateUse...)</span>
-                <span class="method-start">8867 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanUp</span>
-                <span class="method-start">9044 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setupDriver(windows, https://www.nike.com/, chrome, false, 85.0, browserstack)</span>
-                <span class="method-start">9735 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">startExtent(public void com.niketest.LoginPageValidations.validateUserBeingAbleToLogin(java.lang.String,java.lan...)</span>
-                <span class="method-start">17149 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateUserBeingAbleToLogin(testuser002, testpass002)</span>
-                <span class="method-start">17149 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=validateUserBeingAbleToLogin status=SUCCESS method=LoginPageValidations.validateUse...)</span>
-                <span class="method-start">18693 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanUp</span>
-                <span class="method-start">18735 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setupDriver(windows, https://www.nike.com/, chrome, false, 85.0, browserstack)</span>
-                <span class="method-start">19418 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">startExtent(public void com.niketest.LoginPageValidations.validateUserBeingAbleToLogin(java.lang.String,java.lan...)</span>
-                <span class="method-start">26924 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateUserBeingAbleToLogin(testuser003, testpass003)</span>
-                <span class="method-start">26925 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=validateUserBeingAbleToLogin status=SUCCESS method=LoginPageValidations.validateUse...)</span>
-                <span class="method-start">28170 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanUp</span>
-                <span class="method-start">28197 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.niketest.JoinPageValidations</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setupDriver(windows, https://www.nike.com/, chrome, false, 85.0, browserstack)</span>
-                <span class="method-start">28871 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">startExtent(public void com.niketest.JoinPageValidations.fieldValidationOnJoinUsPage())</span>
-                <span class="method-start">36118 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">fieldValidationOnJoinUsPage</span>
-                <span class="method-start">36118 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=fieldValidationOnJoinUsPage status=SUCCESS method=JoinPageValidations.fieldValidati...)</span>
-                <span class="method-start">39687 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanUp</span>
-                <span class="method-start">39722 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.niketest.HomePageValidations</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">generateReport</span>
-                <span class="method-start">40444 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
