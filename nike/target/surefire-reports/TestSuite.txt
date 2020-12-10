@@ -1,4 +1,41 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.851 s - in TestSuite
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 9, Time elapsed: 14.853 s <<< FAILURE! - in TestSuite
+setupDriver(com.niketest.HelpPageValidations)  Time elapsed: 14.528 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created
+from chrome not reachable
+  (Session info: chrome=86.0.4240.198)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E8F4LHE', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009BC013+3194899]
+	Ordinal0 [0x008A6021+2056225]
+	Ordinal0 [0x0073F4B0+586928]
+	Ordinal0 [0x00735894+546964]
+	Ordinal0 [0x00735F2C+548652]
+	Ordinal0 [0x00737175+553333]
+	Ordinal0 [0x0073241E+533534]
+	Ordinal0 [0x00740620+591392]
+	Ordinal0 [0x006E2A0C+207372]
+	Ordinal0 [0x006E1D0D+204045]
+	Ordinal0 [0x006DFC1B+195611]
+	Ordinal0 [0x006C3B7F+80767]
+	Ordinal0 [0x006C4B4E+84814]
+	Ordinal0 [0x006C4AD9+84697]
+	Ordinal0 [0x008BCE64+2149988]
+	GetHandleVerifier [0x00B2BE95+1400773]
+	GetHandleVerifier [0x00B2BB61+1399953]
+	GetHandleVerifier [0x00B331FA+1430314]
+	GetHandleVerifier [0x00B2C69F+1402831]
+	Ordinal0 [0x008B3D61+2112865]
+	Ordinal0 [0x008BE5CB+2155979]
+	Ordinal0 [0x008BE6F5+2156277]
+	Ordinal0 [0x008CF26E+2224750]
+	BaseThreadInitThunk [0x753F6359+25]
+	RtlGetAppContainerNamedObjectPath [0x778D8944+228]
+	RtlGetAppContainerNamedObjectPath [0x778D8914+180]
+
+

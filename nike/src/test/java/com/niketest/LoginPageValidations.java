@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 public class LoginPageValidations extends TestBase {
-    @Test(enabled = false)
+    @Test(enabled = false )
     public void validateUserBeingAleToClickOnJoinUsBtn() {
         LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
@@ -18,7 +18,7 @@ public class LoginPageValidations extends TestBase {
 
     }
 
-    @Test(dataProviderClass = DataProviders.class, dataProvider = "credentials")
+    @Test(dataProviderClass = DataProviders.class, dataProvider = "credentials",enabled = false)
     public void validateUserBeingAbleToLogin(String username, String password) {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);

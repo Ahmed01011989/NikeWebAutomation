@@ -9,9 +9,196 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Selenium Test Suite</th></tr>
-<tr><td><a href="#t0">Automation tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4</td><td>smoke</td><td></td></tr>
+<tr><td><a href="#t0">Automation tests</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">13,383</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Selenium Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Selenium Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Automation tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.niketest.HelpPageValidations</td><td><a href="#m0">setupDriver</a></td><td rowspan="1">1607180059952</td><td rowspan="1">13348</td></tr><tr><th colspan="4">Automation tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="7">com.niketest.HelpPageValidations</td><td><a href="#m1">afterEachTestMethod</a></td><td rowspan="2">1607180073310</td><td rowspan="2">-1607180073310</td></tr><tr class="skippedeven"><td><a href="#m2">afterEachTestMethod</a></td></tr><tr class="skippedeven"><td><a href="#m3">cleanUp</a></td><td rowspan="2">1607180073310</td><td rowspan="2">-1607180073310</td></tr><tr class="skippedeven"><td><a href="#m4">cleanUp</a></td></tr><tr class="skippedeven"><td><a href="#m5">setupDriver</a></td><td rowspan="1">1607180073311</td><td rowspan="1">-1607180073311</td></tr><tr class="skippedeven"><td><a href="#m6">startExtent</a></td><td rowspan="2">1607180073308</td><td rowspan="2">-1607180073308</td></tr><tr class="skippedeven"><td><a href="#m7">startExtent</a></td></tr><tr><th colspan="4">Automation tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.niketest.HelpPageValidations</td><td><a href="#m8">validateUserBeingAleToMoveMoseHoverToPrivacyPolicy</a></td><td rowspan="1">1607180073309</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">validateUserBeingAleToTypeOnSearchBar</a></td><td rowspan="1">1607180073311</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Automation tests</h2></body>
+<h2>Automation tests</h2><h3 id="m0">com.niketest.HelpPageValidations#setupDriver</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>windows</td><td>https://www.nike.com/</td><td>chrome</td><td>false</td><td>85.0</td><td>browserstack</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=86.0.4240.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E8F4LHE&apos;, ip: &apos;192.168.1.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009BC013+3194899]
+	Ordinal0 [0x008A6021+2056225]
+	Ordinal0 [0x0073F4B0+586928]
+	Ordinal0 [0x00735894+546964]
+	Ordinal0 [0x00735F2C+548652]
+	Ordinal0 [0x00737175+553333]
+	Ordinal0 [0x0073241E+533534]
+	Ordinal0 [0x00740620+591392]
+	Ordinal0 [0x006E2A0C+207372]
+	Ordinal0 [0x006E1D0D+204045]
+	Ordinal0 [0x006DFC1B+195611]
+	Ordinal0 [0x006C3B7F+80767]
+	Ordinal0 [0x006C4B4E+84814]
+	Ordinal0 [0x006C4AD9+84697]
+	Ordinal0 [0x008BCE64+2149988]
+	GetHandleVerifier [0x00B2BE95+1400773]
+	GetHandleVerifier [0x00B2BB61+1399953]
+	GetHandleVerifier [0x00B331FA+1430314]
+	GetHandleVerifier [0x00B2C69F+1402831]
+	Ordinal0 [0x008B3D61+2112865]
+	Ordinal0 [0x008BE5CB+2155979]
+	Ordinal0 [0x008BE6F5+2156277]
+	Ordinal0 [0x008CF26E+2224750]
+	BaseThreadInitThunk [0x753F6359+25]
+	RtlGetAppContainerNamedObjectPath [0x778D8944+228]
+	RtlGetAppContainerNamedObjectPath [0x778D8914+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.base.TestBase.getLocalDriver(TestBase.java:82)
+	at com.base.TestBase.setupDriver(TestBase.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.niketest.HelpPageValidations#afterEachTestMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.niketest.HelpPageValidations#afterEachTestMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.niketest.HelpPageValidations#cleanUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.niketest.HelpPageValidations#cleanUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.niketest.HelpPageValidations#setupDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.niketest.HelpPageValidations#startExtent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.niketest.HelpPageValidations#startExtent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.niketest.HelpPageValidations#validateUserBeingAleToMoveMoseHoverToPrivacyPolicy</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=86.0.4240.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E8F4LHE&apos;, ip: &apos;192.168.1.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009BC013+3194899]
+	Ordinal0 [0x008A6021+2056225]
+	Ordinal0 [0x0073F4B0+586928]
+	Ordinal0 [0x00735894+546964]
+	Ordinal0 [0x00735F2C+548652]
+	Ordinal0 [0x00737175+553333]
+	Ordinal0 [0x0073241E+533534]
+	Ordinal0 [0x00740620+591392]
+	Ordinal0 [0x006E2A0C+207372]
+	Ordinal0 [0x006E1D0D+204045]
+	Ordinal0 [0x006DFC1B+195611]
+	Ordinal0 [0x006C3B7F+80767]
+	Ordinal0 [0x006C4B4E+84814]
+	Ordinal0 [0x006C4AD9+84697]
+	Ordinal0 [0x008BCE64+2149988]
+	GetHandleVerifier [0x00B2BE95+1400773]
+	GetHandleVerifier [0x00B2BB61+1399953]
+	GetHandleVerifier [0x00B331FA+1430314]
+	GetHandleVerifier [0x00B2C69F+1402831]
+	Ordinal0 [0x008B3D61+2112865]
+	Ordinal0 [0x008BE5CB+2155979]
+	Ordinal0 [0x008BE6F5+2156277]
+	Ordinal0 [0x008CF26E+2224750]
+	BaseThreadInitThunk [0x753F6359+25]
+	RtlGetAppContainerNamedObjectPath [0x778D8944+228]
+	RtlGetAppContainerNamedObjectPath [0x778D8914+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.base.TestBase.getLocalDriver(TestBase.java:82)
+	at com.base.TestBase.setupDriver(TestBase.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.niketest.HelpPageValidations#validateUserBeingAleToTypeOnSearchBar</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=86.0.4240.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E8F4LHE&apos;, ip: &apos;192.168.1.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009BC013+3194899]
+	Ordinal0 [0x008A6021+2056225]
+	Ordinal0 [0x0073F4B0+586928]
+	Ordinal0 [0x00735894+546964]
+	Ordinal0 [0x00735F2C+548652]
+	Ordinal0 [0x00737175+553333]
+	Ordinal0 [0x0073241E+533534]
+	Ordinal0 [0x00740620+591392]
+	Ordinal0 [0x006E2A0C+207372]
+	Ordinal0 [0x006E1D0D+204045]
+	Ordinal0 [0x006DFC1B+195611]
+	Ordinal0 [0x006C3B7F+80767]
+	Ordinal0 [0x006C4B4E+84814]
+	Ordinal0 [0x006C4AD9+84697]
+	Ordinal0 [0x008BCE64+2149988]
+	GetHandleVerifier [0x00B2BE95+1400773]
+	GetHandleVerifier [0x00B2BB61+1399953]
+	GetHandleVerifier [0x00B331FA+1430314]
+	GetHandleVerifier [0x00B2C69F+1402831]
+	Ordinal0 [0x008B3D61+2112865]
+	Ordinal0 [0x008BE5CB+2155979]
+	Ordinal0 [0x008BE6F5+2156277]
+	Ordinal0 [0x008CF26E+2224750]
+	BaseThreadInitThunk [0x753F6359+25]
+	RtlGetAppContainerNamedObjectPath [0x778D8944+228]
+	RtlGetAppContainerNamedObjectPath [0x778D8914+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.base.TestBase.getLocalDriver(TestBase.java:82)
+	at com.base.TestBase.setupDriver(TestBase.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
 </html>

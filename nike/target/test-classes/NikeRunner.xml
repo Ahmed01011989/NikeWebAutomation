@@ -15,14 +15,12 @@
     <parameter name="browserVersion" value="85.0"/>
 
     <test name="Automation tests">
-
-        <groups>
-            <run>
-                <include name="smoke"/>
-            </run>
-        </groups>
-<classes>
-    <class name="com.niketest.LoginPageValidations"></class>
-</classes>
+        <classes>
+            <class name="com.niketest.HomePageValidations"/>
+            <class name="com.niketest.JoinPageValidations"/>
+            <class name="com.niketest.LoginPageValidations"/>
+            <class name="com.niketest.HelpPageValidations"></class>
+            <class name="com.niketest.NewReleasesPageValidations"></class>
+        </classes>
     </test>
 </suite>

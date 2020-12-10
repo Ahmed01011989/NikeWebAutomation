@@ -3,11 +3,13 @@ package com.nike.pages;
 import com.base.TestBase;
 import com.report.ExtentTestManager;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class HomePage {
+public class HomePage extends TestBase {
 
     private static Logger LOGGER = Logger.getLogger(HomePage.class);
     @FindBy(id = "VisualSearchInput")
@@ -20,13 +22,19 @@ public class HomePage {
     private WebElement signInBtn;
 
     @FindBy(xpath = "//a[text()='New Releases'][1]")
-    private WebElement realesbtn;
+    private WebElement newreleasesbtn;
 
     @FindBy(xpath = "(//span[text()='Join Us'])[1]")
     private WebElement joinUsBtn;
 
     @FindBy(xpath = "//h2[text()='For You and Your Crew']")
     private WebElement ForYouandYourCrew;
+
+    @FindBy(xpath = "//h2[text()='For You and Your Crew']")
+    private WebElement validatescrollviewelement;
+
+    @FindBy(xpath = "(//span[@id='hf_header_label_help'])[1]")
+    private WebElement clickHelp;
 
 
     public void typeOnSearchBar(String data) {
@@ -66,8 +74,8 @@ public class HomePage {
         ExtentTestManager.log("Clicked on Sign In Button");
     }
 
-    public void clickOnRealeasButton() {
-        realesbtn.click();
+    public void clickOnNewReleasesButton() {
+        newreleasesbtn.click();
         ExtentTestManager.log("Clicked on New Release Button");
 
     }
@@ -76,4 +84,23 @@ public class HomePage {
         joinUsBtn.click();
         ExtentTestManager.log("Clicked on Join Us Button");
     }
+
+    public void validateDragAndDrop() {
+
+
+        WebElement source = driver.findElement(By.xpath("(//a[text()='Sale'])[1]"));
+        WebElement destination = driver.findElement(By.xpath("(//input[@id='VisualSearchInput'])[1]"));
+
+        Actions actions = new Actions(driver);
+        actions.dragAndDrop(source, destination).build().perform();
+        ExtentTestManager.log("Success Pass Data To Search Bar");
+    }
+
+    public void clickOnHelpBtn() {
+        clickHelp.click();
+        ExtentTestManager.log("Clicked on Help Button");
+
+    }
+
+
 }

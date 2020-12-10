@@ -1,3 +1,5 @@
 com\niketest\JoinPageValidations.class
 com\niketest\LoginPageValidations.class
+com\niketest\NewReleasesPageValidations.class
+com\niketest\HelpPageValidations.class
 com\niketest\HomePageValidations.class
